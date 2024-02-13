@@ -23,3 +23,8 @@ Broadcast::channel('private-message', function ($user) {
 Broadcast::channel('test-presence', function ($user) {
     return $user;
 });
+
+
+Broadcast::channel('test-channel',function($user){
+    return true;
+});

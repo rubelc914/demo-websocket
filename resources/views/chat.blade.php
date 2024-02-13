@@ -72,6 +72,7 @@
         })
 
         Echo.channel('live-chat')
+        
         .listen('ChantEvent',(e)=>{
             let html = `<br>
             <b>`+e.username+`:- </b>

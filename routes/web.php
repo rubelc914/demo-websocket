@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,3 +37,5 @@ require __DIR__.'/auth.php';
 Route::get('chat-message',[ChatController::class,'chatbox']);
 
 Route::post('send-message',[ChatController::class,'boardcastMsg'])->name('sendMessage');
+
+Route::get('test',[TestController::class,'testData']);
